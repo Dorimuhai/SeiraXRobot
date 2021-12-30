@@ -21,9 +21,3 @@ async def awake(event):
   BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/SeiraXRobot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/seirasupport")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=LUNA,  buttons=BUTTON)
 
-@MEMEK(pattern=("/reload"))
-async def reload(event):
-  tai = event.sender.first_name
-  LUNA = "✅ **bot berhasil di restart**\n\n• Admin list telah di **perbarui**"
-  BUTTON = [[Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/seirasupport")]]
-  await tbot.send_file(event.chat_id, PHOTO, caption=LUNA,  buttons=BUTTON)
