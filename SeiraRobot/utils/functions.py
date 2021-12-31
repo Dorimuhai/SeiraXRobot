@@ -32,9 +32,9 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from SieraRobot import aiohttpsession as aiosession
-from SieraRobot.ex_plugins.dbfunctions import start_restart_stage
-from SieraRobot.utils.http import get, post
+from SeiraRobot import aiohttpsession as aiosession
+from SeiraRobot.ex_plugins.dbfunctions import start_restart_stage
+from SeiraRobot.utils.http import get, post
 
 
 async def restart(m: Message):
