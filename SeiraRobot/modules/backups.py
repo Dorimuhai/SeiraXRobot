@@ -12,7 +12,7 @@ from SeiraRobot.modules.helper_funcs.chat_status import user_admin
 from SeiraRobot.modules.helper_funcs.alternate import typing_action
 
 # from SeiraRobot.modules.rules import get_rules
-import SiestaRobot.modules.sql.rules_sql as rulessql
+import SeiraRobot.modules.sql.rules_sql as rulessql
 
 # from SeiraRobot.modules.sql import warns_sql as warnssql
 import SeiraRobot.modules.sql.blacklist_sql as blacklistsql
