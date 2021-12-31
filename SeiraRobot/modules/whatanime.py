@@ -16,7 +16,7 @@ from telethon.tl.types import (
 )
 from telethon.utils import is_image, is_video
 
-from SieraRobot.events import register as tomori
+from SeiraRobot import register as tomori
 
 
 
