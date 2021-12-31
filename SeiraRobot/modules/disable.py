@@ -27,7 +27,7 @@ if is_module_loaded(FILENAME):
         is_user_admin,
         user_admin,
     )
-    from SiestaRobot.modules.sql import disable_sql as sql
+    from Seira.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
