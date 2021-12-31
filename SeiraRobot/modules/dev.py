@@ -5,7 +5,7 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import SiestaRobot
+import SeiraRobot
 
 from SeiraRobot import dispatcher
 from SeiraRobot.modules.helper_funcs.chat_status import dev_plus
