@@ -11,7 +11,7 @@ from telegram import (
 )
 from SeiraRobot import dispatcher, pbot
 from pyrogram import filters
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
+from SeiraRobot.modules.disable import DisableAbleCommandHandler
 
 
 __help__ = """ 
