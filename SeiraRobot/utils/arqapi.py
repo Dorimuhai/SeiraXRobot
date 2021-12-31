@@ -4,15 +4,15 @@ from random import randint
 from time import time
 
 import aiohttp
-from SieraRobot import aiohttpsession 
+from SeiraRobot import aiohttpsession 
 from aiohttp import ClientSession
 
 from google_trans_new import google_translator
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
 
-from SieraRobot import BOT_ID, OWNER_ID, ARQ_API_URL, ARQ_API_KEY
-from SieraRobot import pbot
+from SeiraRobot import BOT_ID, OWNER_ID, ARQ_API_URL, ARQ_API_KEY
+from SeiraRobot import pbot
 
 ARQ_API = "WZQUBA-PFAZQJ-OMIINH-MIVHYM-ARQ"
 ARQ_API_KEY = "WZQUBA-PFAZQJ-OMIINH-MIVHYM-ARQ"
