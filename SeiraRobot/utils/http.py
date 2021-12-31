@@ -19,7 +19,7 @@ SOFTWARE.
 """
 from asyncio import gather
 
-from SieraRobot import aiohttpsession as session
+from SeiraRobot import aiohttpsession as session
 
 
 async def get(url: str, *args, **kwargs):
