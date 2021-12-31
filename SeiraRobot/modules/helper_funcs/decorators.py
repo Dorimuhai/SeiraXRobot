@@ -175,4 +175,4 @@ class SeiraHandler:
 seiracmd = SeiraHandler(d).command
 seiramsg = SeiraHandler(d).message
 seiracallback = SeiraHandler(d).callbackquery
-seirainline = SeiraaHandler(d).inlinequery
+seirainline = SeiraHandler(d).inlinequery
