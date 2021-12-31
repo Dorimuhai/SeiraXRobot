@@ -23,7 +23,7 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/SiestaRobot/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/SeiraRobot/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
@@ -133,7 +133,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from SiestaRobot.config import Development as Config
+    from SeiraRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -226,7 +226,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-from SiestaRobot.modules.sql import SESSION
+from SeiraaRobot.modules.sql import SESSION
 
 defaults = tg.Defaults(run_async=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
