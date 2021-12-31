@@ -356,7 +356,7 @@ def help_button(update, context):
         pass
 
 
-def siesta_about_callback(update, context):
+def seira_about_callback(update, context):
     query = update.callback_query
     if query.data == "seira_":
         query.message.edit_text(
@@ -408,7 +408,7 @@ def siesta_about_callback(update, context):
     elif query.data == "seira_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Siesta Robot now ready to manage your group."
+            "\nCongragulations, Seira Robot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -418,7 +418,7 @@ def siesta_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="siesta_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="seira_")]]
             ),
         )
 
@@ -430,13 +430,13 @@ def siesta_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="siesta_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="seira_")]]
             ),
         )
     elif query.data == "seira_support":
         query.message.edit_text(
             text="*๏ Seira support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Siesta.",
+            "\nJoin My Support Group/Channel for see or report a problem on Seira.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -445,7 +445,7 @@ def siesta_about_callback(update, context):
                     InlineKeyboardButton(text="Updates", url="https://t.me/sethproject"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="siesta_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="seira_"),
                  
                  ]
                 ]
@@ -469,7 +469,7 @@ def siesta_about_callback(update, context):
                     InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="siesta_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="seira_"),
                  ]
                 ]
             ),
@@ -495,7 +495,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="siesta_")
+                    InlineKeyboardButton(text="Go Back", callback_data="seira_")
                  ]
                 ]
             ),
@@ -813,7 +813,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        siesta_about_callback, pattern=r"siesta_", run_async=True
+        seira_about_callback, pattern=r"seira_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(
