@@ -1,4 +1,4 @@
-import SiestaRobot.modules.sql.locks_sql as sql
+import SeiraRobot.modules.sql.locks_sql as sql
 import html
 import ast
 
