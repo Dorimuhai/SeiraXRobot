@@ -1,6 +1,6 @@
 import random
-from SiestaRobot.events import register
-from SiestaRobot import telethn
+from SeiraRobot.events import register
+from SeiraRobot import telethn
 
 APAKAH_STRING = ["Iya", 
                  "Tidak", 
