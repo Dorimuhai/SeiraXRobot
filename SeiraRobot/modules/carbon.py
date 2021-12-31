@@ -4,9 +4,9 @@ from pyrogram import __version__ as z
 from telethon import __version__ as s
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
-from SiestaRobot import pbot
-from SiestaRobot.utils.errors import capture_err
-from SiestaRobot.utils.functions import make_carbon
+from SeiraRobot import pbot
+from SeiraRobot.utils.errors import capture_err
+from SeiraRobot.utils.functions import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
