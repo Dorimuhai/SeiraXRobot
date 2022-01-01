@@ -7,7 +7,7 @@ from telethon.tl import functions
 
 from SeiraRobot import TEMP_DOWNLOAD_DIRECTORY
 from SeiraRobot import telethn as client
-from SeiraRobot import register
+from SeiraRobot.events import register
 
 
 async def is_register_admin(chat, user):
