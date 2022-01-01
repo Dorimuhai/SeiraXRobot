@@ -17,7 +17,7 @@ async def handler(event):
         await event.reply("```Reply to a image/sticker.```")
         return
     file = await bot.download_media(reply_message)
-    msg = await event.reply("```Memifying this image! (」ﾟﾛﾟ)｣ ```")
+    msg = await event.reply("```Memifying this image!```")
     text = str(event.pattern_match.group(1)).strip()
     if len(text) < 1:
         return await msg.edit("You might want to try `/mmf text`")
@@ -39,7 +39,7 @@ async def drawText(image_path, text):
     if os.name == "nt":
         fnt = "ariel.ttf"
     else:
-        fnt = "./SeiraRobot/resources/0.ttf"
+        fnt = "./SeiraRobot/resources/default.ttf"
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
     if ";" in text:
         upper_text, lower_text = text.split(";")
