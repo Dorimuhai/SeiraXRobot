@@ -11,7 +11,7 @@ from telethon.tl.types import *
 from SeiraRobot import *
 
 from SeiraRobot import telethn as tbot
-from SeiraRobot import register
+from SeiraRobot.events import register
 
 
 async def is_register_admin(chat, user):
