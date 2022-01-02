@@ -873,6 +873,7 @@ async def bug(bot, message: Message):
     else:
         if len(message.command) < 2:
             await message.reply_text(reply_text("teks")
+        )
 return
 await message.reply_text("dah kekirim ya ke grup")
 await bot.send_message(LOG_CHAT_ID, f"""
