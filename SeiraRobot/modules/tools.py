@@ -26,8 +26,9 @@ Link To File:
 ❂ /tgm : Get Telegraph Link Of Replied Media
 ❂ /tgt: Get Telegraph Link of Replied Text
 
- Tagger
-❂ /tagall : for tag everyone at least 100 member first.
+ *Tagger*
 ❂ /all <reason> : To tag all members in the group.
 ❂ /cancel : To stop tagging all members in the group.
+
+📌 /all and /cancel only can use by admin group
 """
