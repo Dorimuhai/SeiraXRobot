@@ -17,9 +17,6 @@ __help__ = """
 ❂ /unzip*:* reply to a telegram file to decompress it from the .zip format
 
 *Random API*
-❂ /ptl or /asupan: get random video from Instagram timeline
-❂ /chika: get random video from chikakiku
-❂ /wibu:get random short anime video or photos
 ❂ /truth: challenge 
 ❂ /dare: challenge
 Link To File:
