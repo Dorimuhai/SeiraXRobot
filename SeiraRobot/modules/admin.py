@@ -871,7 +871,7 @@ async def bug(bot, message: Message):
         )
         await message.delete()
     else:
-    if len(message.command) < 2:
+        if len(message.command) < 2:
             await message.reply_text(reply_text("teks")
         )
         return
