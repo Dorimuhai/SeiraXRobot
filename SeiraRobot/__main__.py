@@ -786,7 +786,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Seira Robot Actived !**
+                f"""**Seira Robot Actived 🔥**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
