@@ -1,6 +1,6 @@
 import html
 
-from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMarkup, Client
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
@@ -14,7 +14,6 @@ from SeiraRobot.modules.helper_funcs.chat_status import (
     connection_status,
     user_admin,
     ADMIN_CACHE,
-    Client,
 )
 
 from SeiraRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
