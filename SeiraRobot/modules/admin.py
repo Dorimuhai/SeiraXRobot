@@ -861,7 +861,7 @@ def adminlist(update, context):
 
 @Client.on_message(command(["bug", "bug@SeiraXRobot"]))
 async def bug(bot, message: Message):
-        if message.chat.username:
+    if message.chat.username:
         chatusername = (f"{message.chat.username}")
     else:
         chatusername = ("Private group")
