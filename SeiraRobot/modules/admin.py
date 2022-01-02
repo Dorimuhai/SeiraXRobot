@@ -14,6 +14,7 @@ from SeiraRobot.modules.helper_funcs.chat_status import (
     connection_status,
     user_admin,
     ADMIN_CACHE,
+    Client.on_message,
 )
 
 from SeiraRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
