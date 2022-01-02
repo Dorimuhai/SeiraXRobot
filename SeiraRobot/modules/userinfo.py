@@ -340,7 +340,6 @@ def info(update: Update, context: CallbackContext):
                 document=open(f"{user.id}.png", "rb"),
                 caption=(text),
                 parse_mode=ParseMode.HTML,
-                disable_web_page_preview=True,
             )
 
             os.remove(f"{user.id}.png")
@@ -375,7 +374,6 @@ def about_me(update: Update, context: CallbackContext):
         update.effective_message.reply_text(
             f"*{user.first_name}*:\n{escape_markdown(info)}",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
         )
     elif message.reply_to_message:
         username = message.reply_to_message.from_user.first_name
@@ -443,7 +441,6 @@ def about_bio(update: Update, context: CallbackContext):
         update.effective_message.reply_text(
             "*{}*:\n{}".format(user.first_name, escape_markdown(info)),
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
         )
     elif message.reply_to_message:
         username = user.first_name
