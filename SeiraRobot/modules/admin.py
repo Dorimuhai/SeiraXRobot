@@ -861,11 +861,11 @@ def adminlist(update, context):
 
 @Client.on_message(command(["bug", "bug@SeiraXRobot"]))
 async def bug(bot, message: Message):
-    if message.chat.username:
+        if message.chat.username:
         chatusername = (f"{message.chat.username}")
     else:
         chatusername = ("Private group")
-    if message.sender_chat:
+        if message.sender_chat:
         return await message.reply_text(
             "you're an Anonymous Admin !\n\n» revert back to user account from admin rights."
         )
@@ -874,12 +874,12 @@ async def bug(bot, message: Message):
         if len(message.command) < 2:
             await message.reply_text(reply_text("teks")
         )
-return
-await message.reply_text("dah kekirim ya ke grup")
-await bot.send_message(LOG_CHAT_ID, f"""
-pesannya
-"""
-)
+        return
+            await message.reply_text("dah kekirim ya ke grup")
+            await bot.send_message(LOG_CHAT_ID, f"""
+            pesannya
+            """
+        )
 
 
 @bot_admin
