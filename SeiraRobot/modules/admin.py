@@ -865,7 +865,7 @@ async def bug(bot, message: Message):
         chatusername = (f"{message.chat.username}")
     else:
         chatusername = ("Private group")
-        if message.sender_chat:
+    if message.sender_chat:
         return await message.reply_text(
             "you're an Anonymous Admin !\n\n» revert back to user account from admin rights."
         )
