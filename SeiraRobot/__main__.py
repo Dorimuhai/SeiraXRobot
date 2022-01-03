@@ -382,7 +382,7 @@ def seira_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="seira_credits"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/Dorimuhai/SeiraXRobot"),
+                    InlineKeyboardButton(text="Seth Tamvan", url="https://t.me/xyzsethhh"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="seira_back"),
@@ -465,8 +465,8 @@ def seira_about_callback(update, context):
                     InlineKeyboardButton(text="Sena-Ex", url="https://github.com/kennedy-ex"),
                  ],
                  [
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="Vain", url="https://github.com/shiinobu"),
+                    InlineKeyboardButton(text="All Dev's Bots", url="https://t.me/SeiraSupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="seira_"),
