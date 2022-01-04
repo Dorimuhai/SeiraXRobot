@@ -800,13 +800,13 @@ def adminlist(update, context):
         # if user.username:
         #    name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n 🤴Creator:"
-            text += "\n<code> • </code>{}\n".format(name)
+            text += "\n 🤴FOUNDER:"
+            text += "\n<code> └ </code>{}\n".format(name)
 
             if custom_title:
-                text += f"<code> ★ {html.escape(custom_title)}</code>\n"
+                text += f"<code> » {html.escape(custom_title)}</code>\n"
 
-    text += "\n👮Admins:"
+    text += "\n💂CO-FOUNDER:"
 
     custom_admin_list = {}
     normal_admin_list = []
@@ -841,7 +841,7 @@ def adminlist(update, context):
 
     for admin_group in custom_admin_list.copy():
         if len(custom_admin_list[admin_group]) == 1:
-            text += "\n<code> • </code>{} | <code>{}</code>".format(
+            text += "\n<code> ├ </code>{} » <code>{}</code>".format(
                 custom_admin_list[admin_group][0],
                 html.escape(admin_group),
             )
@@ -851,7 +851,7 @@ def adminlist(update, context):
     for admin_group, value in custom_admin_list.items():
         text += "\n🚨 <code>{}</code>".format(admin_group)
         for admin in value:
-            text += "\n<code> • </code>{}".format(admin)
+            text += "\n<code> ├ </code>{}".format(admin)
         text += "\n"
 
     try:
