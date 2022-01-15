@@ -6,14 +6,14 @@ from pyrogram.types import Message
 from SeiraRobot import pbot
 
 
-@pgram.on_message(filters.command("staff"))
+@pbot.on_message(filters.command("staff"))
 def staff(client: Client, message: Message):
     chat_id = message.chat.id
     chat_title = message.chat.title
     creator = []
     co_founder = []
     admin = []
-    admin_check = pgram.get_chat_members(message.chat.id, filter="administrators")
+    admin_check = pbot.get_chat_members(message.chat.id, filter="administrators")
     for x in admin_check:
         if x.status == "administrator" and x.can_promote_members and x.title:
             title = escape(x.title)
