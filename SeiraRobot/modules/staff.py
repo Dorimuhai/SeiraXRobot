@@ -3,7 +3,7 @@ from html import escape
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from SeiraRobot import pgram
+from SeiraRobot import pbot
 
 
 @pgram.on_message(filters.command("staff"))
