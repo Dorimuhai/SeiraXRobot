@@ -101,7 +101,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("SiestaRobot.modules." + module_name)
+    imported_module = importlib.import_module("SeiraRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -209,7 +209,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="siesta_"),
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="seira_"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Siestaxbot?startgroup=new"),
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/SeiraXRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -371,10 +371,10 @@ def help_button(update, context):
         pass
 
 
-def siesta_about_callback(update, context):
+def seira_about_callback(update, context):
     query = update.callback_query
     chat = update.effective_chat
-    if query.data == "siesta_":
+    if query.data == "seira_":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_text"),
             parse_mode=ParseMode.MARKDOWN,
@@ -382,23 +382,23 @@ def siesta_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Admins", callback_data="siesta_admin"),
-                        InlineKeyboardButton(text=gs(chat.id, "notes_button"), callback_data="siesta_notes"),
+                        InlineKeyboardButton(text="Admins", callback_data="seira_admin"),
+                        InlineKeyboardButton(text=gs(chat.id, "notes_button"), callback_data="seira_notes"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="siesta_support"),
-                        InlineKeyboardButton(text="Credits", callback_data="siesta_credit"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="seira_support"),
+                        InlineKeyboardButton(text="Credits", callback_data="seira_credit"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "source_button"), url="https://github.com/shiinobu/SiestaRobot"),
+                        InlineKeyboardButton(text=gs(chat.id, "source_button"), url="https://github.com/Dorimuhai/SeiraXRobot"),
                     ],
                     [
-                    InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_back"),
+                    InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="seira_back"),
                     ]
                 ]
             ),
         )
-    elif query.data == "siesta_back":
+    elif query.data == "seira_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -410,14 +410,14 @@ def siesta_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="siesta_"),
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="seira_"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Siestaxbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/SeiraXRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -426,7 +426,7 @@ def siesta_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "siesta_admin":
+    elif query.data == "seira_admin":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_admin_text"),
             parse_mode=ParseMode.MARKDOWN,
@@ -434,57 +434,57 @@ def siesta_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="seira_"),
                     ]
                 ]
             ),
         )
 
-    elif query.data == "siesta_notes":
+    elif query.data == "seira_notes":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_notes_text"),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="seira_"),
                     ]
                 ]
             ),
         )
-    elif query.data == "siesta_support":
+    elif query.data == "seira_support":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_support_text"),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/machinaxupport"),
-                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/machinaxupdate"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/seirasupport"),
+                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/sethproject"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="seira_"),
                     ]
                 ]
             ),
         )
 
 
-    elif query.data == "siesta_credit":
+    elif query.data == "seira_credit":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_credit_text"),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Vain", url="https://github.com/shiinobu"),
+                        InlineKeyboardButton(text="SETH", url="https://github.com/xyzsethhh"),
                     ],
                     [
                         InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
                         InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="seira_"),
                     ]
                 ]
             ),
@@ -505,7 +505,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="seira_"),
                     ]
                 ]
             ),
@@ -521,14 +521,14 @@ def Source_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="siesta_"),
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="seira_"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Siestaxbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/SeiraXRoot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -840,7 +840,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        siesta_about_callback, pattern=r"siesta_", run_async=True
+        seira_about_callback, pattern=r"seira_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(
