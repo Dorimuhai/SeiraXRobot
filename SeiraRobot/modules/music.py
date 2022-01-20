@@ -131,7 +131,7 @@ async def ytmusic(client, message: Message):
  
             if duration > LIMIT:
                 await pablo.edit(
-                    f"❌ **durasinya kelamaan gabisa tot:v**"
+                    f"❌ **durasinya kelamaan gabisa banh**"
                 )
                 is_downloading = False
                 return
@@ -165,7 +165,7 @@ async def ytmusic(client, message: Message):
             os.remove(files)
 
 
-@pbot.on_message(filters.command(["musiicc", "sonnggg"]))
+@pbot.on_message(filters.command(["musiiccc", "sonngg"]))
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
     if not urlissed:
