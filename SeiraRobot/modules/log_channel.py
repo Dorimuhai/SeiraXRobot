@@ -14,6 +14,7 @@ if is_module_loaded(FILENAME):
     from SeiraRobot import EVENT_LOGS, LOGGER, dispatcher
     from SeiraRobot.modules.helper_funcs.chat_status import user_admin
     from SeiraRobot.modules.sql import log_channel_sql as sql
+    from SeiraRobot.modules.language import gs
 
     def loggable(func):
         @wraps(func)
@@ -188,19 +189,8 @@ if is_module_loaded(FILENAME):
         return "No log channel is set for this group!"
 
 
-    __help__ = """
-──「 Log channel 」──
-
-❂ /logchannel*:* get log channel info
-❂ /setlog*:* set the log channel.
-❂ /unsetlog*:* unset the log channel.
-
-*Setting the log channel is done by*:
-
-➩ adding the bot to the desired channel (as an admin!)
-➩ sending /setlog in the channel
-➩ forwarding the /setlog to the group
-"""
+    def helps(chat):
+        return gs(chat, "logchannel_help")
 
     __mod_name__ = "Log Channel​"
 
