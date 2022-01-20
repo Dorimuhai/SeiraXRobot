@@ -14,7 +14,7 @@ from telegram import(
 )
 from telegram.ext import CallbackContext
 
-from SeiraRobot import DEV_USERS, ERROR_LOGS, dispatcher
+from SeiraRobot import DEV_USERS, dispatcher
 from SeiraRobot.modules.helper_funcs.decorators import seiracmd
 
 pretty_errors.mono()
