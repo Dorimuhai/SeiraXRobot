@@ -12,10 +12,10 @@ pm_start_text: |
   *Hey Darling, {} ❤️*
   ✪ I'm an anime-theme management robot [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
 
-  ┏━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┓
+  
   × *Server Uptime :* `{}`
   × `{}` *users, across* `{}` *chats.*
-  ┗━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┛
+  
 
   ✪ Hit /help to see my available commands.
    
@@ -97,7 +97,7 @@ admin_help: |
     ──「 Admins 」──
 
     *User Commands*:
-    ❂ /admins*:* list of admins in the chat
+    ❂ /staff*:* list of admins in the chat
     ❂ /pinned*:* to get the current pinned message.
 
     *The Following Commands are Admins only:* 
@@ -108,7 +108,7 @@ admin_help: |
     ❂ /fullpromote*:* promotes the user replied to with full rights
     ❂ /demote*:* demotes the user replied to
     ❂ /title <title here>*:* sets a custom title for an admin that the bot promoted
-    ❂ /admincache*:* force refresh the admins list
+    ❂ /reload*:* force refresh the admins list
     ❂ /del*:* deletes the message you replied to
     ❂ /purge*:* deletes all messages between this and the replied to message.
     ❂ /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
@@ -302,14 +302,6 @@ extras_help: |
     ❂ /ud <word>*:* Type the word or expression you want to search use
     ❂ /reverse*:* Does a reverse image search of the media which it was replied to.
     ❂ /wiki <query>*:* wikipedia your query
-    ❂ /wall <query>*:* get a wallpaper from wall.alphacoders.com
-    ❂ /cash*:* currency converter
-
-      Example:
-      ➩ `/cash 1 USD INR`  
-            _OR_
-      ➩ `/cash 1 usd inr`
-         Output: `1.0 USD = 75.505 INR`
 MARKDOWN_HELP: |
     ──「 Markdown Help 」──
 
@@ -696,9 +688,6 @@ tools_help: |
     ❂ /unzip*:* reply to a telegram file to decompress it from the .zip format
 
     *Random API*
-    ❂ /ptl: get random video from Instagram timeline
-    ❂ /chika: get random video from chikakiku
-    ❂ /wibu:get random short anime video or photos
     ❂ /truth: challenge 
     ❂ /dare: challenge
     Link To File:
@@ -712,7 +701,8 @@ tools_help: |
     ❂ /tgt: Get Telegraph Link of Replied Text
 
     Tagger
-    ❂ /tagall : for tag everyone at least 100 member first.
+    ❂ /all <reason> : for tag everyone on your group.
+    ❂ /cancel : for stop tag everyone on your group
 translator_help: |
     ──「 Translator 」──
 
