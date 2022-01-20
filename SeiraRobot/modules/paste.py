@@ -11,7 +11,7 @@ from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMark
 from telegram.ext import CallbackContext
 
 from SeiraRobot import eor
-from SeiraRobot import pgram as app
+from SeiraRobot import pbot as app
 from SeiraRobot.modules.helper_funcs.alternate import typing_action
 from SeiraRobot.modules.helper_funcs.decorators import seiracmd
 from SeiraRobot.modules.helper_funcs.misc import upload_text
