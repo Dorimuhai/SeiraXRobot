@@ -481,13 +481,13 @@ def demote(update: Update, context: CallbackContext) -> str:
 
 @user_admin
 def refresh_admin(update, _):
+    chat = update.effective_chat
     try:
         ADMIN_CACHE.pop(update.effective_chat.id)
     except KeyError:
         pass
 
-    update.effective_message.reply_text("✅ Admins cache refreshed!")
-
+    update.effective_message.reply_text(text=gs(update.effective_chat.id, "admin_refresh"))
 
 @connection_status
 @bot_admin
