@@ -12,10 +12,10 @@ pm_start_text: |
   *Hai sayang, {} ❤️*
   ✪ Saya adalah robot manajemen tema anime [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
 
-  ┏━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┓
+  
   × *Aktif sejak :* `{}`
   × `{}` *pengguna, di seluruh* `{}` *obrolan.*
-  ┗━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┛
+  
 
   ✪ Tekan /help untuk melihat perintah saya yang tersedia.
    
@@ -97,7 +97,7 @@ admin_help: |
     ──「 Admins 」──
 
     *Perintah Pengguna*:
-    ❂ /admins*:* daftar admin di chat
+    ❂ /staff*:* daftar admin di chat
     ❂ /pinned*:* untuk mendapatkan pesan yang disematkan saat ini.
 
     *Perintah Berikut hanya Admin:*
@@ -108,7 +108,7 @@ admin_help: |
     ❂ /fullpromote*:* mempromosikan pengguna yang dibalas dengan hak penuh
     ❂ /demote*:* menurunkan pengguna yang dibalas
     ❂ /title <title here>*:* menetapkan judul khusus untuk admin yang dipromosikan bot
-    ❂ /admincache*:* paksa refresh daftar admin
+    ❂ /reload*:* paksa refresh daftar admin
     ❂ /del*:* menghapus pesan yang Anda balas
     ❂ /purge*:* menghapus semua pesan antara ini dan pesan yang dibalas.
     ❂ /purge <integer X>*:* menghapus pesan yang dibalas, dan X pesan yang mengikutinya jika membalas pesan.
@@ -273,7 +273,7 @@ connection_help: |
     Ini memungkinkan Anda untuk terhubung ke database obrolan, dan menambahkan sesuatu ke dalamnya tanpa perintah yang muncul di obrolan! Untuk alasan yang jelas, Anda harus menjadi admin untuk menambahkan sesuatu; tetapi setiap anggota dalam grup dapat melihat data Anda.
 
     ❂ /connect: Menghubungkan ke chat (Dapat dilakukan dalam grup dengan /connect atau /connect <chat id> di PM)
-    ❂ /koneksi: Daftar obrolan yang terhubung
+    ❂ /connection: Daftar obrolan yang terhubung
     ❂ /disconnect: Putuskan sambungan dari obrolan
     ❂ /helpconnect: Daftar perintah yang tersedia yang dapat digunakan dari jarak jauh
 
@@ -302,14 +302,7 @@ extras_help: |
     ❂ /ud <word>*:* Ketikkan kata atau ekspresi yang ingin dicari gunakan
     ❂ /reverse*:* Melakukan pencarian gambar terbalik dari media yang dibalas.
     ❂ /wiki <query>*:* wikipedia permintaan Anda
-    ❂ /wall <query>*:* dapatkan wallpaper dari wall.alphacoders.com
-    ❂ /cash*:* pengonversi mata uang
-
-      Contoh:
-      ➩ `/cash 1 USD INR`
-          _ATAU_
-      ➩ `/cash 1 usd inr`
-         Keluaran: `1,0 USD = 75,505 INR`
+    
 MARKDOWN_HELP: |
     ──「 Bantuan Markdown 」──
 
@@ -460,7 +453,7 @@ fun_help: |
     ❂ /kill *:* Animasi Untuk Membunuh
 
     - Pengiriman
-    ❂ /pasangan - dapatkan pasangan hari ini
+    ❂ /couples - dapatkan pasangan hari ini
 
     - Berikut adalah bantuan untuk modul Styletext:
     ❂ /weebify <text>: weebify teks Anda!
@@ -478,7 +471,7 @@ greetings_help: |
     ❂ /welcome <on/off>*:* mengaktifkan/menonaktifkan pesan selamat datang.
     ❂ /welcome*:* menunjukkan pengaturan sambutan saat ini.
     ❂ /welcome noformat*:* menunjukkan pengaturan selamat datang saat ini, tanpa pemformatan - berguna untuk mendaur ulang pesan selamat datang Anda!
-    ❂ /selamat tinggal*:* penggunaan dan argumen yang sama dengan `/welcome`.
+    ❂ /goodbye*:* penggunaan dan argumen yang sama dengan `/welcome`.
     ❂ /setwelcome <sometext>*:* mengatur pesan selamat datang khusus. Jika digunakan membalas media, gunakan media itu.
     ❂ /setgoodbye <sometext>*:* mengatur pesan selamat tinggal khusus. Jika digunakan membalas media, gunakan media itu.
     ❂ /resetwelcome*:* reset ke pesan selamat datang default.
@@ -606,7 +599,7 @@ logomarker_help: |
     *Editor Gambar :*
     ❂ /edit <balas foto> - untuk mengedit gambar.
 musicplayer_help: |
-    ──「 Musikplayer 」──
+    ──「 Musik player 」──
 
     Bantuan Musik dapat mengakses dengan perintah yang berbeda dan bantuan bantuan dan pengaturan dasbor dukungan.
     ❂ /mhelp - untuk bantuan modul musik
@@ -696,10 +689,7 @@ tools_help: |
     ❂ /unzip*:* membalas file telegram untuk mendekompresnya dari format .zip
 
     *API Acak*
-    ❂ /ptl: dapatkan video acak dari timeline Instagram
-    ❂ /chika: dapatkan video acak dari chikakiku
-    ❂ /wibu:dapatkan video atau foto anime pendek secara acak
-    ❂ /kebenaran: tantangan
+    ❂ /truth: tantangan
     ❂ /dare: tantangan
     Tautan Ke Berkas:
     ❂ /up: balas tautan unduhan langsung untuk mengunggahnya ke telegram sebagai file
@@ -712,7 +702,8 @@ tools_help: |
     ❂ /tgt: Dapatkan Tautan Telegraf dari Teks Balasan
 
     penanda
-    ❂ /tagall : untuk tag semua orang minimal 100 member dulu.
+    ❂ /all : untuk tag semua member yang ada di grup
+    ❂ /cancel : untuk stop tag semua member yang ada di grup
 translator_help: |
     ──「 Penerjemah 」──
 
