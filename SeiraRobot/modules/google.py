@@ -22,7 +22,7 @@ from telethon.tl.types import *
 
 from SeiraRobot import *
 
-from SeiraRobot import register
+from SeiraRobot.events import register
 from SeiraRobot import telethn as tbot
 from SeiraRobot.modules.language import gs
 
