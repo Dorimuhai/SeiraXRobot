@@ -431,6 +431,6 @@ async def inuka(client, message):
         return
 
 def helps(chat):
-    return gs(chat, "chatbot_help"
+    return gs(chat, "chatbot_help")
 
 __mod_name__ = "Chatbot"
