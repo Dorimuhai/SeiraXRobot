@@ -10,7 +10,7 @@ from SeiraRobot import BOT_ID, pbot, arq
 from SeiraRobot.ex_plugins.chatbot import add_chat, get_session, remove_chat
 from SeiraRobot.utils.pluginhelper import admins_only, edit_or_reply
 
-url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
+url = "https://thearq.tech"
 
 translator = Translator()
 
