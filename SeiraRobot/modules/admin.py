@@ -59,7 +59,7 @@ def setchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You are missing right to change group info!")
+        msg.reply_text(text=gs(update.effective_chat.id, "user_change_info"))
         return
 
     if msg.reply_to_message:
@@ -68,15 +68,15 @@ def setchatpic(update: Update, context: CallbackContext):
         elif msg.reply_to_message.document:
             pic_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("You can only set some photo as chat pic!")
+            msg.reply_text(text=gs(update.effective_chat.id, "set_chatpic"))
             return
-        dlmsg = msg.reply_text("Just a sec...")
+        dlmsg = msg.reply_text(text=gs(update.effective_chat.id, "set_chatpic_loading"))
         tpic = context.bot.get_file(pic_id)
         tpic.download("gpic.png")
         try:
             with open("gpic.png", "rb") as chatp:
                 context.bot.set_chat_photo(int(chat.id), photo=chatp)
-                msg.reply_text("Successfully set new chatpic!")
+                msg.reply_text(text=gs(update.effective_chat.id, "set_chatpic_success"))
         except BadRequest as excp:
             msg.reply_text(f"Error! {excp.message}")
         finally:
@@ -84,7 +84,7 @@ def setchatpic(update: Update, context: CallbackContext):
             if os.path.isfile("gpic.png"):
                 os.remove("gpic.png")
     else:
-        msg.reply_text("Reply to some photo or file to set new chat pic!")
+        msg.reply_text(text=gs(update.effective_chat.id, "set_chatpic_none"))
         
 @bot_admin
 @user_admin
@@ -94,7 +94,7 @@ def rmchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You don't have enough rights to delete group photo")
+        msg.reply_text(text=gs(update.effective_chat.id, "rm_chatpic"))
         return
     try:
         context.bot.delete_chat_photo(int(chat.id))
