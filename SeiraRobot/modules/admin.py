@@ -45,12 +45,10 @@ def set_sticker(update: Update, context: CallbackContext):
             msg.reply_text(text=gs(update.effective_chat.id, "set_sticker_success").format(html.escape(chat.title)))
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
-                return msg.reply_text(
-                    "Sorry, due to telegram restrictions chat needs to have minimum 100 members before they can have group stickers!"
-                )
+                return msg.reply_text(text=gs(update.effective_chat.id, "set_sticker_restrictions"))
             msg.reply_text(f"Error! {excp.message}.")
     else:
-        msg.reply_text("You need to reply to some sticker to set chat sticker set!")
+        msg.reply_text(text=gs(update.effective_chat.id, "set_sticker"))
        
     
 @bot_admin
