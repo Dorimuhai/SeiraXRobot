@@ -42,7 +42,7 @@ def set_sticker(update: Update, context: CallbackContext):
         stkr = msg.reply_to_message.sticker.set_name
         try:
             context.bot.set_chat_sticker_set(chat.id, stkr)
-            msg.reply_text(f"text=gs(update.effective_chat.id, ”set_sticker_success”){chat.title}!")
+            msg.reply_text(text=gs(update.effective_chat.id, "set_sticker_success").format(html.escape{chat.title}))
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(
