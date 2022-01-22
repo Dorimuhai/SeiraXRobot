@@ -38,13 +38,11 @@ def set_sticker(update: Update, context: CallbackContext):
 
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
-            return msg.reply_text(
-                "You need to reply to some sticker to set chat sticker set!"
-            )
+            return msg.reply_text(text=gs(update.effective_chat.id, "set_chatpic_none"))
         stkr = msg.reply_to_message.sticker.set_name
         try:
             context.bot.set_chat_sticker_set(chat.id, stkr)
-            msg.reply_text(f"Successfully set new group stickers in {chat.title}!")
+            msg.reply_text(f"text=gs(update.effective_chat.id, ”set_sticker_success”){chat.title}!")
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(
