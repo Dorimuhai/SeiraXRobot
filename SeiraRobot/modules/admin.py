@@ -98,7 +98,7 @@ def rmchatpic(update: Update, context: CallbackContext):
         return
     try:
         context.bot.delete_chat_photo(int(chat.id))
-        msg.reply_text("Successfully deleted chat's profile photo!")
+        msg.reply_text(text=gs(update.effective_chat.id, "rm_chatpic_success"))
     except BadRequest as excp:
         msg.reply_text(f"Error! {excp.message}.")
         return
@@ -111,18 +111,18 @@ def set_desc(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text("You're missing rights to change chat info!")
+        return msg.reply_text(text=gs(update.effective_chat.id, "user_change_info"))
 
     tesc = msg.text.split(None, 1)
     if len(tesc) >= 2:
         desc = tesc[1]
     else:
-        return msg.reply_text("Setting empty description won't do anything!")
+        return msg.reply_text(text=gs(update.effective_chat.id, "set_desc"))
     try:
         if len(desc) > 255:
-            return msg.reply_text("Description must needs to be under 255 characters!")
+            return msg.reply_text(text=gs(update.effective_chat.id, "set_desc_len"))
         context.bot.set_chat_description(chat.id, desc)
-        msg.reply_text(f"Successfully updated chat description in {chat.title}!")
+        msg.reply_text(text=gs(update.effective_chat.id, "set_desc_success").format(html.escape(chat.title)))
     except BadRequest as excp:
         msg.reply_text(f"Error! {excp.message}.")        
         
@@ -135,20 +135,17 @@ def setchat_title(update: Update, context: CallbackContext):
     args = context.args
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You don't have enough rights to change chat info!")
+        msg.reply_text(text=gs(update.effective_chat.id, "user_change_info"))
         return
 
     title = " ".join(args)
     if not title:
-        msg.reply_text("Enter some text to set new title in your chat!")
+        msg.reply_text(text=gs(update.effective_chat.id, "set_chat_title"))
         return
 
     try:
         context.bot.set_chat_title(int(chat.id), str(title))
-        msg.reply_text(
-            f"Successfully set <b>{title}</b> as new chat title!",
-            parse_mode=ParseMode.HTML,
-        )
+        msg.reply_text(text=gs(update.effective_chat.id, "set_chat_title_success").format(html.escape(chat.title)))
     except BadRequest as excp:
         msg.reply_text(f"Error! {excp.message}.")
         return
@@ -173,15 +170,13 @@ def promote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("You don't have the necessary rights to do that!")
+        message.reply_text(text=gs(update.effective_chat.id, "promote_creator"))
         return
 
     user_id = extract_user(message, args)
 
     if not user_id:
-        message.reply_text(
-            "You don't seem to be referring to a user or the ID specified is incorrect..",
-        )
+        message.reply_text(text=gs(update.effective_chat.id, "promote_id_error"))
         return
 
     try:
@@ -190,11 +185,11 @@ def promote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("How am I meant to promote someone that's already an admin?")
+        message.reply_text(text=gs(update.effective_chat.id, "promote_admin"))
         return
 
     if user_id == bot.id:
-        message.reply_text("I can't promote myself! Get an admin to do it for me.")
+        message.reply_text(text=gs(update.effective_chat.id, "promote_self"))
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -215,16 +210,13 @@ def promote(update: Update, context: CallbackContext) -> str:
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("I can't promote someone who isn't in the group.")
+            message.reply_text(text=gs(update.effective_chat.id, "promote_error1"))
         else:
-            message.reply_text("An error occured while promoting.")
+            message.reply_text(text=gs(update.effective_chat.id, "promote_error2"))
         return
 
-    bot.sendMessage(
-        chat.id,
-        f"Promoting a user in <b>{chat.title}</b>\n\nUser: {mention_html(user_member.user.id, user_member.user.first_name)}\nAdmin: {mention_html(user.id, user.first_name)}",
-        parse_mode=ParseMode.HTML,
-    )
+    bot.sendMessage(text=gs(update.effective_chat.id, "promote_success").format(html.escape(chat.title)))
+    
 
     log_message = (
         f"<b>{html.escape(chat.title)}:</b>\n"
@@ -332,7 +324,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("You don't have the necessary rights to do that!")
+        message.reply_text(text=gs(update.effective_chat.id, "promote_creator"))
         return
 
     user_id = extract_user(message, args)
