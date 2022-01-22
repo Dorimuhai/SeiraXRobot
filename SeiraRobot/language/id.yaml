@@ -9,7 +9,7 @@ set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!"
 
 # PM Text
 pm_start_text: |
-  *Hai sayang, {} ❤️*
+  *👋 Hai, {}*
   ✪ Saya adalah robot manajemen tema anime [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
 
   ──────────────────────
@@ -87,10 +87,10 @@ support_chat_link_button: "Mendukung"
 updates_channel_link_button: "Pembaruan"
 notes_button: "Catatan"
 source_button: "Kode sumber"
-help_button: "Mendapatkan bantuan"
+help_button: "bantuan"
 back_button: "Kembali"
 about_button: "Tentang Seira Robot"
-inline_button: "Mencoba inline!​​"
+inline_button: "inline!​​"
 
 # MODULES
 admin_help: |
