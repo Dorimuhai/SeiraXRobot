@@ -9,7 +9,7 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-  *Hey Darling, {} ❤️*
+  *👋Hey, {} *
   ✪ I'm an anime-theme management robot [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
 
   ──────────────────────
@@ -20,7 +20,7 @@ pm_start_text: |
   ✪ Hit /help to see my available commands.
    
 group_start_text: |
-  *👋🏻 Hi Babe, I'm Seira Robot!*
+  *👋🏻 Hi , I'm Seira Robot!*
   
   *Started active since :* `{}`
 
