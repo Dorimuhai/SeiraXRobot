@@ -390,7 +390,7 @@ def seira_about_callback(update, context):
                         InlineKeyboardButton(text="Credits", callback_data="seira_credit"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "source_button"), url="https://github.com/Dorimuhai/SeiraXRobot"),
+                        InlineKeyboardButton(text=gs(chat.id, "Chat with Owner"), https://t.me/xyzsethhh"),
                     ],
                     [
                     InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="seira_back"),
