@@ -9,18 +9,17 @@ set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!"
 
 # PM Text
 pm_start_text: |
-  *👋 Hai, {}*
+  *Hai, {}*
   ✪ Saya adalah robot manajemen tema anime [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
-
-  ──────────────────────
+  ───────────★──────────
   × *Aktif sejak :* `{}`
   × `{}` *pengguna, di seluruh* `{}` *obrolan.*
-  ──────────────────────
-
+  ───────────★──────────
   ✪ Tekan /help untuk melihat perintah saya yang tersedia.
+  ✪ Maintenance by : @xyzsethhh
    
 group_start_text: |
-  *👋🏻 Hai Sayang, aku Robot Seira!* 
+  *👋🏻 Hai `{}`, aku Robot Seira!* 
   
   *Mulai aktif sejak :* `{}`
 
