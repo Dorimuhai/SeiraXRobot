@@ -9,16 +9,14 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-  *👋Hey, {} *
-  ✪ I'm an anime-theme management robot [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
-
-  ──────────────────────
-  × *Server Uptime :* `{}`
-  × `{}` *users, across* `{}` *chats.*
-  ──────────────────────
-
-  ✪ Hit /help to see my available commands.
-   
+  *Hey, {} *
+  ✪ ɪ'ᴍ ᴀɴ ᴀɴɪᴍᴇ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​ [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
+  ────────────★─────────
+  × *sᴇʀᴠᴇʀ ᴜᴘᴛɪᴍᴇ​ :* `{}`
+  × `{}` *ᴜsᴇʀs, ᴀᴄʀᴏss​* `{}` *ᴄʜᴀᴛs​.*
+  ────────────★─────────
+  ✪ ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs​.
+  ✪ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ʙʏ :​ @xyzsethhh
 group_start_text: |
   *👋🏻 Hi , I'm Seira Robot!*
   
@@ -86,7 +84,7 @@ add_bot_to_group_button: "♕ Add Me To Your Group ♕"
 support_chat_link_button: "Support"
 updates_channel_link_button: "Update"
 notes_button: "Notes"
-source_button: "Source Code"
+source_button: "Chat with Owner"
 help_button: "Get Help"
 back_button: "Go back"
 about_button: "About Seira Robot"
