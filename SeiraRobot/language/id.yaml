@@ -15,7 +15,7 @@ pm_start_text: |
   × *ᴀᴋᴛɪꜰ sᴇᴊᴀᴋ​ :* `{}`
   × `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅɪ sᴇʟᴜʀᴜʜ​* `{}` *ᴏʙʀᴏʟᴀɴ​.*
   ───────────★──────────
-  ✪ ᴛᴇᴋᴀɴ /ʜᴇʟᴘ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴘᴇʀɪɴᴛᴀʜ sᴀʏᴀ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ.
+  ✪ ᴛᴇᴋᴀɴ /help ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴘᴇʀɪɴᴛᴀʜ sᴀʏᴀ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ.
   ✪ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ʙʏ :​ @xyzsethhh
    
 group_start_text: |
@@ -81,11 +81,11 @@ group_settings_text: "Klik di sini untuk mendapatkan pengaturan obrolan ini, ser
 group_settings_button: "Pengaturan"
 
 # PM Button
-add_bot_to_group_button: "♕ Tambahkan Saya Ke Grup Anda ♕"
+add_bot_to_group_button: "★ Tambahkan Saya Ke Grup Anda ★"
 support_chat_link_button: "Mendukung"
 updates_channel_link_button: "Pembaruan"
 notes_button: "Catatan"
-source_button: "Kode sumber"
+source_button: "Chat with Owner"
 help_button: "bantuan"
 back_button: "Kembali"
 about_button: "Tentang Seira Robot"
