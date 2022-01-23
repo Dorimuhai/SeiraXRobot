@@ -9,14 +9,14 @@ set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!"
 
 # PM Text
 pm_start_text: |
-  *Hai,`{}`*
-  ✪ Saya adalah robot manajemen tema anime [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
+  *ʜᴀɪ​,{}*
+  ✪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʀᴏʙᴏᴛ ᴍᴀɴᴀᴊᴇᴍᴇɴ ᴛᴇᴍᴀ ᴀɴɪᴍᴇ  [✨](https://telegra.ph/file/348824c1cb7cfea58405f.jpg)
   ───────────★──────────
-  × *Aktif sejak :* `{}`
-  × `{}` *pengguna, di seluruh* `{}` *obrolan.*
+  × *ᴀᴋᴛɪꜰ sᴇᴊᴀᴋ​ :* `{}`
+  × `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅɪ sᴇʟᴜʀᴜʜ​* `{}` *ᴏʙʀᴏʟᴀɴ​.*
   ───────────★──────────
-  ✪ Tekan /help untuk melihat perintah saya yang tersedia.
-  ✪ Maintenance by : @xyzsethhh
+  ✪ ᴛᴇᴋᴀɴ /ʜᴇʟᴘ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴘᴇʀɪɴᴛᴀʜ sᴀʏᴀ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ.
+  ✪ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ʙʏ :​ @xyzsethhh
    
 group_start_text: |
   *👋🏻 Hai, aku Robot Seira!* 
