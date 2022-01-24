@@ -174,9 +174,9 @@ def start(update: Update, context: CallbackContext):
                 mod = args[0].lower().split("_", 1)[1]
 
                 help_list = HELPABLE[mod].helps(update.effective_chat.id)
-                if isintance(help_list, list):
+                if isinstance(help_list, list):
                     help_text = help.list[0]
-                elif isintance(help_list, str):
+                elif isinstance(help_list, str):
                     help_text = help.list
 
                 if not HELPABLE.get(mod, False):
