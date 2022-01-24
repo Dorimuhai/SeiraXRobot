@@ -3,7 +3,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://telegra.ph/file/45a8e32321c845e6cf6b1.jpg">
+  <img src="https://telegra.ph/file/a6f1a60ff6d8c22355da5.jpg">
 </p>
 
 <h3 align="center">
@@ -12,10 +12,9 @@
 </h3>
 
 <p align='center'>
-  <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Made%20With-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
-  <a href="https://GitHub.com/shiinobu/SiestaRobot"> <img src="https://img.shields.io/badge/Maintained-No-lightgrey?style=for-the-badge" alt="Maintenance" /> </a><br>
+  <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Made%20With-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a><br>
   <a href="https://docs.sqlalchemy.org/en/14/"> <img src="https://img.shields.io/badge/SQL%20Alchemy-1.4.29-green?style=for-the-badge" alt="SQL Alchemy" /> </a>
-  <a href="https://github.com/Dorimuhai/SeiraXRobot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a><br>
+  <a href="https://github.com/Dorimuhai/SeiraXRobot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained-Yes-lightgrey?style=for-the-badge&logo=github" /> </a><br>
   <a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.10-white?style=for-the-badge&logo=github" alt="Python Telegram Bot" /> </a>
   <a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.23.0-red?style=for-the-badge&logo=github" alt="Telethon" /> </a>
   <a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.1-purple?style=for-the-badge&logo=python" alt="Python Version" /> </a>
@@ -23,30 +22,20 @@
 
 <details>
   <summary>Seira is available on Telegram</summary>
-    <br>
-      <p align="left">
-        <b>
-          <h2>
-            <a href="https://t.me/SeiraXRobot"> 
-              <img src="https://img.shields.io/badge/Seira-Robot-green?style=for-the-badge&logo=telegram" alt="Seira Robot" /> 
-            </a>
-          </h2>
-        </b>
-      </p>
+    <p align="center">
+      <a href="https://t.me/SeiraXRobot"> 
+        <img src="https://img.shields.io/badge/Seira-Robot-green?style=for-the-badge&logo=telegram" width="220" height="38.45" /> 
+      </a>
+    </p>
 </details>
 
 <details>
   <summary>Deploy to Heroku</summary>
-    <br>
-      <p align="center">
-        <b>
-          <h2>
-            <a href="https://heroku.com/deploy?template=https://github.com/Dorimuhai/SeiraXRobot"> 
-              <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" alt="Deploy Heroku" /> 
-            </a>
-          </h2>
-        </b>
-      </p>
+    <p align="center">
+      <a href="https://heroku.com/deploy?template=https://github.com/Dorimuhai/SeiraXRobot"> 
+        <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45" /> 
+      </a>
+    </p>
 </details>
 
 <h2 align="center">
