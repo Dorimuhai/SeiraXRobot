@@ -172,11 +172,19 @@ def start(update: Update, context: CallbackContext):
                 )
             elif args[0].lower().startswith("ghelp_"):
                 mod = args[0].lower().split("_", 1)[1]
+
+                help_list = HELPABLE[mod].helps(update.effective_chat.id)
+                if isintance(help_list, list):
+                    help_text = help.list[0]
+                elif isintance(help_list, str):
+                    help_text = help.list
+
                 if not HELPABLE.get(mod, False):
                     return
+
                 send_help(
                     update.effective_chat.id,
-                    HELPABLE[mod].helps,
+                    HELPABLE[mod].__mod_name__ + help_text,
                     InlineKeyboardMarkup(
                         [
                             [
