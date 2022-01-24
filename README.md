@@ -21,7 +21,7 @@
 </p>
 
 <details>
-  <summary>Seira is available on Telegram</summary>
+  <summary>SEIRA IS AVAILABLE ON TELEGRAM</summary>
     <p align="center">
       <a href="https://t.me/SeiraXRobot"> 
         <img src="https://img.shields.io/badge/Seira-Robot-green?style=for-the-badge&logo=telegram" width="220" height="38.45" /> 
@@ -30,7 +30,7 @@
 </details>
 
 <details>
-  <summary>Deploy to Heroku</summary>
+  <summary>DEPLOY TO HEROKU</summary>
     <p align="center">
       <a href="https://heroku.com/deploy?template=https://github.com/Dorimuhai/SeiraXRobot"> 
         <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45" /> 
@@ -76,13 +76,13 @@
     </tr>
     <tr valign="top">
       <td align="center">
-        <a href="https://github.com/shiinobu"><img src="https://img.shields.io/badge/Seira-Updates-blue?style=for-the-badge&logo=telegram"></a>
+        <a href="https://github.com/shiinobu"><img src="https://img.shields.io/badge/Vain-Github-lightgrey?style=for-the-badge&logo=github"></a>
       </td>
       <td align="center">
-        <a href="https://github/zeinzo"><img src="https://img.shields.io/badge/Seira-Support-blue?style=for-the-badge&logo=telegram"></a>
+        <a href="https://github/zeinzo"><img src="https://img.shields.io/badge/Zeinzo-Github-lightgrey?style=for-the-badge&logo=github"></a>
       </td>
       <td align="center">
-        <a href="https://github.com/Dorimuhai"><img src="https://img.shields.io/badge/Seira-Developers-blue?style=for-the-badge&logo=telegram"></a>
+        <a href="https://github.com/Dorimuhai"><img src="https://img.shields.io/badge/Seth-Developers-lightgrey?style=for-the-badge&logo=github"></a>
       </td>
     </tr>
   </tbody>
