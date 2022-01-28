@@ -137,18 +137,7 @@ anime_help: |
 
     ❂ /animequotes: for anime quotes randomly as photos.
     ❂ /quote: send quotes randomly as text
-antichannel_help: |
-    ──「 Anti-Channels 」──
 
-        ⚠️ WARNING ⚠️
-
-    *IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
-
-    Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
-    This command can only be used by *Admins*.
-
-    ❂ /antichannelmode <'on'/'yes'> *:* enables anti-channel-mode
-    ❂ /antichannelmode <'off'/'no'> *:* disabled anti-channel-mode
 antiflood_help: |
     ──「 Anti-Flood 」──
 
