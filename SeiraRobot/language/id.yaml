@@ -138,18 +138,7 @@ anime_help: |
 
     ❂ /animequotes: untuk kutipan anime secara acak sebagai foto.
     ❂ /quote: kirim kutipan secara acak sebagai teks
-antichannel_help: |
-    ──「 Anti-Saluran 」──
 
-        ⚠️ PERINGATAN ⚠️
-
-    *JIKA GUNAKAN MODE INI, HASILNYA ADA DI GROUP SELAMANYA ANDA TIDAK BISA CHAT MENGGUNAKAN CHANNEL*
-
-    Mode Anti Channel adalah mode untuk secara otomatis melarang pengguna yang mengobrol menggunakan Saluran.
-    Perintah ini hanya dapat digunakan oleh *Admin*.
-
-    ❂ /antichannelmode <'on'/'yes'> *:* mengaktifkan mode anti-channel
-    ❂ /antichannelmode <'off'/'no'> *:* nonaktif anti-channel-mode
 antiflood_help: |
     ──「 Anti-Flood 」──
 
